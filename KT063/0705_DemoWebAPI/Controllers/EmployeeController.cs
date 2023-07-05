@@ -23,7 +23,7 @@ namespace _0705_DemoWebAPI.Controllers
             public string EmpName { get; set; }
         }
 
-        [HttpPost] // 新增 [HttpPost] 屬性修飾器
+        [HttpPost]
         public string New(Employee employee)
         {
             string result = $"EmpNo: {employee.EmpNo}, EmpCode: {employee.EmpCode}, EmpName: {employee.EmpName}";
