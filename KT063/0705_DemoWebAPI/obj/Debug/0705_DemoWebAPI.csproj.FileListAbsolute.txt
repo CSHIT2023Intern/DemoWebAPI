@@ -70,3 +70,4 @@ C:\Users\吳旻璇\Desktop\實習\CSHIT\Project\DemoWebAPI\KT063\0705_DemoWebAPI
 C:\Users\吳旻璇\Desktop\實習\CSHIT\Project\DemoWebAPI\KT063\0705_DemoWebAPI\obj\Debug\0705_DemoWebAPI.csproj.CopyComplete
 C:\Users\吳旻璇\Desktop\實習\CSHIT\Project\DemoWebAPI\KT063\0705_DemoWebAPI\obj\Debug\0705_DemoWebAPI.dll
 C:\Users\吳旻璇\Desktop\實習\CSHIT\Project\DemoWebAPI\KT063\0705_DemoWebAPI\obj\Debug\0705_DemoWebAPI.pdb
+C:\Users\吳旻璇\Desktop\實習\CSHIT\Project\DemoWebAPI\KT063\0705_DemoWebAPI\bin\refs.EmployeeInformation.dll
