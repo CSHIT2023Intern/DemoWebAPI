@@ -18,12 +18,17 @@ namespace DemoWebAPI.Controllers
             return EmployeeInfo.Get();
         }
 
-        
-
         [HttpPost]
-        public void Post()
+        public object Employe()
         {
-
+            return EmployeeInfo.New(17019,"App-01","Dev_01");
         }
-    }
+
+
+
+    }   
+
+       
+    
+
 }
