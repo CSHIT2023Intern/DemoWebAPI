@@ -11,7 +11,7 @@ namespace DemoWebAPI.Controllers
     public class EmployeeController : ApiController
     {
         [HttpGet]
-        public object KT069()
+        public object Employee()
         {
             return EmployeeInfo.Get();
         }
