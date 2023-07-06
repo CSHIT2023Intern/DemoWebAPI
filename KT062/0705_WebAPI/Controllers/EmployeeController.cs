@@ -17,26 +17,33 @@ namespace _0705_WebAPI.Controllers
             return EmployeeInfo.Get();
         }
 
-        // 建立一個Employee's List
-        private readonly List<Employee> employeeList = new List<Employee>
-        {
-        };
-
-        // Post
+        // Post 新增employee
         [HttpPost]
-        public string Post([FromBody]Employee employee)
+        public string New(int empNo, string empCode, string empName)
         {
-            // 新增employee
-            employeeList.Add(employee);
-            //var newEmp = EmployeeInfo.New(int empNo, string empCode, string empName)->string;
-            var newEmp = $"EmpNo: {employee.empNo}, EmpCode: {employee.empCode}, EmpName: {employee.empName}";
+            string newEmp = $"EmpNo: {empNo}, EmpCode: {empCode}, EmpName: {empName}";
             return newEmp;
         }
+
+        // 建立一個Employee's List
+        /*private readonly List<Employee> employeeList = new List<Employee>
+        {
+        };*/
+
+        // Post
+        /*[httppost]
+        public string post([frombody] employee employee)
+        {
+            // 新增employee
+            employeelist.add(employee);
+            var newemp = $"empno: {employee.empno}, empcode: {employee.empcode}, empname: {employee.empname}";
+            return newemp;
+        }*/
     }
-    public class Employee
+    /*public class Employee
     {
         public int empNo { get; set; }
         public string empCode { get; set; }
         public string empName { get; set; }
-    }
+    }*/
 }
