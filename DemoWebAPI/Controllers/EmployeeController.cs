@@ -33,10 +33,10 @@ namespace DemoWebAPI.Controllers
         }
 
         [HttpPost]
-        public IHttpActionResult CreateEmployee(Employee employee)
+        public string New(Employee employee)
         {
             employees.Add(employee);
-            return CreatedAtRoute("DefaultApi", new { id = employee.empNo }, employee);
+            return EmployeeInfo.New(employee.empNo, employee.empCode, employee.empName);
         }
 
         [HttpPut]
@@ -65,6 +65,7 @@ namespace DemoWebAPI.Controllers
         }
     }
 }
+
 //using System;
 //using System.Collections.Generic;
 //using System.Linq;
