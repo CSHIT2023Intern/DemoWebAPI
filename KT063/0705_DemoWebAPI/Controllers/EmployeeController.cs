@@ -18,15 +18,15 @@ namespace _0705_DemoWebAPI.Controllers
 
         public class Employee
         {
-            public int EmpNo { get; set; }
-            public string EmpCode { get; set; }
-            public string EmpName { get; set; }
+            public int empNo { get; set; }
+            public string empCode { get; set; }
+            public string empName { get; set; }
         }
 
         [HttpPost]
         public string New(Employee employee)
         {
-            string result = $"EmpNo: {employee.EmpNo}, EmpCode: {employee.EmpCode}, EmpName: {employee.EmpName}";
+            string result = $"EmpNo: {employee.empNo}, EmpCode: {employee.empCode}, EmpName: {employee.empName}";
             return result;
         }
     }
