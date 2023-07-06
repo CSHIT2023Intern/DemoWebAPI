@@ -40,10 +40,10 @@ namespace _0705_WebAPI.Controllers
             return newemp;
         }*/
     }
-    /*public class Employee
+    public class Employee
     {
         public int empNo { get; set; }
         public string empCode { get; set; }
         public string empName { get; set; }
-    }*/
+    }
 }
