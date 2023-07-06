@@ -19,11 +19,11 @@ namespace DemoWebAPI.Controllers
         [HttpPost]
         public string CreateEmployee(Employee employee)
         {
-            int empNo = employee.empNo;
-            string empCode = employee.empCode;
-            string empName = employee.empName;
+            //int empNo = employee.empNo;
+            //string empCode = employee.empCode;
+            //string empName = employee.empName;
 
-            string result = EmployeeInfo.New(empNo, empCode, empName);
+            string result = EmployeeInfo.New(employee.empNo, employee.empCode, employee.empName);
 
             return result;
         }
