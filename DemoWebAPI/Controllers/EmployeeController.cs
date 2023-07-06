@@ -34,6 +34,14 @@ namespace DemoWebAPI.Controllers
             return Ok(EmployeeInfo.New(emp.empNo, emp.empCode, emp.empName));
         }
 
+        // 較不好的方式
+        // 呼叫時使用 parameters，參數會在url後面，用[QueryString]的方式呈現
+        [HttpPost]
+        public string New(int empNo, string empCode, string empName)
+        {
+            string txt = $"EmpNo: {empNo}, EmpCode: {empCode}, EmpName: {empName}";
+            return txt;
+        }
 
     }
 }
