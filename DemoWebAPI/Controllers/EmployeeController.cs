@@ -10,22 +10,56 @@ namespace DemoWebAPI.Controllers
 {
     public class EmployeeController : ApiController
     {
-        List<Employee> employees = new List<Employee>();
+        //public class Employee
+        //{
+        //    public int empNo { get; set; }
+        //    public string empCode { get; set; }
+        //    public string empName { get; set; }
+        //}
+        //public static List<Employee> _employee = new List<Employee>();
         [HttpGet]
         public object Employee()
         {
-            employees = EmployeeInfo.Get();
-            return employees;
+            return EmployeeInfo.Get();
         }
-        
+
+        //public object EmployeeGet()
+        //{
+        //    Employee _employee = new Employee();
+        //    var employeeData = EmployeeInfo.Get();
+        //    List<Employee> employees = employeeData.Select(e => new Employee
+        //    {
+        //        empNo = e.empNo,
+        //        empCode = e.empCode,
+        //        empName = e.empName,
+
+        //    }).ToList();
+        //    return employees;
+        //}
+
         [HttpPost]
-        public string New(int empNO, string empCode, string empName)
+        public string Employee(Employee emp)
         {
-            return "post";
-            /*Employee newEmployee = new Employee(empNo, empCode, empName);
-            EmployeeData.Employees.Add(newEmployee);
-            string result = $"\"EmpNo\":{empNo},\"empCode\":\"{empCode}\",\"empName\":\"{empName}\"";
-            return result;*/
+            return EmployeeInfo.New(emp.empNo, emp.empCode, emp.empName);
         }
-    }    
+
+        //public IHttpActionResult Post([FromBody] Employee employee)
+        //{
+
+        //    string result = $"EmpNo: {employee.empNo}, EmpCode: {employee.empCode}, EmpName: {employee.empName}";
+        //    return Ok(result);
+        //}
+
+        //public IHttpActionResult Insert([FromBody] Employee parameter)
+        //{
+        //    _employee.Add(new Employee
+        //    {
+        //        empNo = parameter.empNo,
+        //        empCode = parameter.empCode,
+        //        empName = parameter.empName
+        //    });
+        //    string result = $"EmpNo: {parameter.empNo}, EmpCode: {parameter.empCode}, EmpName: {parameter.empName}";
+        //    return Ok(result);
+        //}
+    }
 }
