@@ -19,24 +19,29 @@ namespace _0705_WebAPI.Controllers
 
         // Post 新增employee
         [HttpPost]
-        public string New(int empNo, string empCode, string empName)
+        // 方法一 回傳 string 型態
+        public string Employee(Employee emp)
         {
-            string newEmp = $"EmpNo: {empNo}, EmpCode: {empCode}, EmpName: {empName}";
-            return newEmp;
+            return EmployeeInfo.New(emp.empNo, emp.empCode, emp.empName);
         }
+
+        // 方法二 回傳資料型態使用 IHttpActionResult
+        /*public IHttpActionResult Post(Employee emp)
+        {
+            return Ok(EmployeeInfo.New(emp.empNo, emp.empCode, emp.empName));
+        }*/
 
         // 建立一個Employee's List
         /*private readonly List<Employee> employeeList = new List<Employee>
         {
-        };*/
+        };
 
-        // Post
-        /*[httppost]
-        public string post([frombody] employee employee)
+        [HttpPost]
+        public string Post([FromBody] Employee emp)
         {
             // 新增employee
-            employeelist.add(employee);
-            var newemp = $"empno: {employee.empno}, empcode: {employee.empcode}, empname: {employee.empname}";
+            employeeList.Add(emp);
+            var newemp = $"Empno: {emp.empNo}, Empcode: {emp.empCode}, Empname: {emp.empName}";
             return newemp;
         }*/
     }
