@@ -24,6 +24,7 @@ namespace DemoWebAPI.Controllers
         // POST api/values
         public void Post([FromBody] string value)
         {
+            var temp =  value;
         }
 
         // PUT api/values/5

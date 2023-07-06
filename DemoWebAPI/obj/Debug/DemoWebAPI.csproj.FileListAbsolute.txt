@@ -70,3 +70,5 @@ D:\E882\Intern\112_Intern\DemoWebAPI\DemoWebAPI\obj\Debug\DemoWebAPI.csproj.Core
 D:\E882\Intern\112_Intern\DemoWebAPI\DemoWebAPI\obj\Debug\DemoWebAPI.csproj.CopyComplete
 D:\E882\Intern\112_Intern\DemoWebAPI\DemoWebAPI\obj\Debug\DemoWebAPI.dll
 D:\E882\Intern\112_Intern\DemoWebAPI\DemoWebAPI\obj\Debug\DemoWebAPI.pdb
+D:\E882\Intern\112_Intern\DemoWebAPI\DemoWebAPI\bin\refs.EmployeeInformation.dll
+D:\E882\Intern\112_Intern\DemoWebAPI\DemoWebAPI\bin\refs.EmployeeInformation.pdb
