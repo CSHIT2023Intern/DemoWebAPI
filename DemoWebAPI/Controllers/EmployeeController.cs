@@ -29,7 +29,7 @@ namespace DemoWebAPI.Controllers
         public IHttpActionResult PostEmployee([FromBody] Employee employee)
         {
             employees.Add(employee); // 將新增的員工資料加入到列表中
-            return Ok();
+            return Ok(employee);
         }
     }
     // 反序列化類別
