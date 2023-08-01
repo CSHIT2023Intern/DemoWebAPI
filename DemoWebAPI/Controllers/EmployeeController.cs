@@ -25,10 +25,6 @@ namespace DemoWebAPI.Controllers
         {
             var allEmployees = EmployeeInfo.Get();
             var employee = allEmployees.Concat(employees).FirstOrDefault(e => e.empNo == id);
-            if (employee == null)
-            {
-                return NotFound();
-            }
             return Ok(employee);
         }
 
